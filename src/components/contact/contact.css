@@ -1,0 +1,95 @@
+#contact {
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+h2 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.container.contact__container {
+  width: 58%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: var(--color-white);
+  filter: drop-shadow(0 0 0.275rem black);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.contact-btn {
+  font-size: 0.85rem;
+}
+/* form css */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 40vw;
+}
+input,
+textarea {
+  color: var(--color-white);
+  font-size: small;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--color-primary);
+  resize: none;
+  transition: var(--transition);
+}
+
+input:hover {
+  border: 2px solid var(--color-white);
+}
+textarea:hover {
+  border: 2px solid var(--color-white);
+}
+
+@media screen and (max-width: 900px) {
+  .container.contact__container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  form {
+    width: 60vw;
+  }
+}
